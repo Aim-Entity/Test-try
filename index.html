@@ -5,30 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>App Test</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="#">
-      <div class="personal-details">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter name" />
+    <div class="container">
+      <form>
+        <div class="form-group form-block" id="form">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter name"
+            class="form-control"
+          />
 
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter email" />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter email"
+            class="form-control"
+          />
 
-        <label for="age">Age</label>
-        <input type="number" id="age" placeholder="Enter age" />number
+          <label for="age">Age</label>
+          <input
+            type="number"
+            id="age"
+            placeholder="Enter age"
+            class="form-control"
+          />
 
-        <label for="male">Male</label>
-        <input type="checkbox" id="male" />
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text form-control">
+                <input type="checkbox" id="male" />
+                <label for="male">Male</label>
+              </div>
+            </div>
 
-        <label for="Female">Female</label>
-        <input type="checkbox" id="Female" />
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text form-control">
+                  <input type="checkbox" id="Female" />
+                  <label for="Female">Female</label>
+                </div>
+              </div>
 
-        <label for="Other">Other</label>
-        <input type="checkbox" id="Other" />
+              <div class="input-group mb-3 ">
+                <div class="input-group-prepend bottom">
+                  <div class="input-group-text form-control">
+                    <input type="checkbox" id="Other" />
+                    <label for="Other">Other</label>
+                  </div>
+                </div>
 
-        <input type="submit" value="Submit" />
-      </div>
-    </form>
+                <input type="submit" value="Submit" class="btn btn-sm btn-success" id="submit">
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
